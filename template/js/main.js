@@ -17,3 +17,9 @@ function arithmetic(a, b, operator){
  }
   
 }
+
+// IP Validation
+// JavaScript:
+function isValidIP(str) { 
+  return /^(?!.*\.$)((?!0\d)(1?\d?\d|25[0-5]|2[0-4]\d)(\.|$)){4}$/.test(str)
+}
