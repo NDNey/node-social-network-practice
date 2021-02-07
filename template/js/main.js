@@ -23,3 +23,19 @@ function arithmetic(a, b, operator){
 function isValidIP(str) { 
   return /^(?!.*\.$)((?!0\d)(1?\d?\d|25[0-5]|2[0-4]\d)(\.|$)){4}$/.test(str)
 }
+
+// Categorize New Member
+// JavaScript:
+function openOrSenior(data){
+  let answer = []
+  for(let i = 0; i < data.length; i++){
+    if (data[i][0] >= 55 && data[i][1] > 7){
+      answer.push('Senior')
+    }else{
+      answer.push('Open')
+    }
+  }
+  
+  return answer
+
+}
