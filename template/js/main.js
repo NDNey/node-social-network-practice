@@ -38,4 +38,15 @@ function openOrSenior(data){
   
   return answer
 
+
+}
+
+// Check if a triangle is an equable triangle!
+// JavaScript:
+function equableTriangle(a,b,c) {
+
+  let s = (a+b+c)/2
+  let area = Math.sqrt((s)*(s - a)*(s - b)*(s - c))
+  
+return s*2 === area
 }
