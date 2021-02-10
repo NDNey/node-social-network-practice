@@ -50,3 +50,12 @@ function equableTriangle(a,b,c) {
   
 return s*2 === area
 }
+// Sum of a sequence
+// JavaScript:
+const sequenceSum = (begin, end, step) => {
+ let answer = 0
+ for (let i = begin; i <=end ;i+= step){
+   answer += i
+ }
+  return answer
+};
