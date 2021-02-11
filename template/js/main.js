@@ -59,3 +59,14 @@ const sequenceSum = (begin, end, step) => {
  }
   return answer
 };
+
+// Sum of a Sequence [Hard-Core Version]
+// JavaScript:
+function sequenceSum(begin, end, step){
+  let answer = 0
+
+   for(let i = begin; step > 0 ? i <= end : i >= end ; i+= step){
+     answer += i
+   }
+  return answer
+}
