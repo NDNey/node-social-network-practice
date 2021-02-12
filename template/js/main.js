@@ -108,4 +108,17 @@ function sc(floor){
   return floor > 6 ? `${"Aa~ ".repeat(floor-1)}Pa!`:`${"Aa~ ".repeat(floor-1)}Pa! Aa!`
 }
 
-//nnd jkbdckjndajksnckjanskj
+// The Hashtag Generator
+// JavaScript:
+function generateHashtag (str) {
+
+  let newStr =str.replace(/\s+/g, " ")
+  if( str.match(/\w\s+\w/) && newStr.length < 100){
+       return '#'+newStr.split(' ').map(e => e[0][0].toUpperCase()+ e.slice(1)).join('')
+  }else if(!str || str.length  >= 140 ){
+    return false
+  }
+  
+
+     return '#'+newStr.split(' ').map(e => e[0][0].toUpperCase()+ e.slice(1)).join('')
+}
