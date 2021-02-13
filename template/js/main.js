@@ -122,3 +122,9 @@ function generateHashtag (str) {
 
      return '#'+newStr.split(' ').map(e => e[0][0].toUpperCase()+ e.slice(1)).join('')
 }
+
+// You only need one - Beginner
+// JavaScript:
+function check(a, x) {
+  return a.includes(x)
+}
