@@ -128,3 +128,8 @@ function generateHashtag (str) {
 function check(a, x) {
   return a.includes(x)
 }
+The highest profit wins!
+JavaScript:
+function minMax(arr){
+  return [Math.min(...arr),Math.max(...arr)]; // fix me!
+}
