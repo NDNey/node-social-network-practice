@@ -139,3 +139,17 @@ function minMax(arr){
 function minMax(arr){
   return [Math.min(...arr),Math.max(...arr)]; // fix me!
 }
+
+
+///////////////////////////////////////////////////////////////////////
+The highest profit wins!
+JavaScript:
+function minMax(arr){
+  return [Math.min(...arr),Math.max(...arr)]; // fix me!
+}
+
+// The highest profit wins!
+// JavaScript:
+function minMax(arr){
+  return [Math.min(...arr),Math.max(...arr)]; // fix me!
+}
