@@ -107,3 +107,5 @@ function sc(floor){
   if(floor <= 1){return ""}
   return floor > 6 ? `${"Aa~ ".repeat(floor-1)}Pa!`:`${"Aa~ ".repeat(floor-1)}Pa! Aa!`
 }
+
+//nnd jkbdckjndajksnckjanskj
