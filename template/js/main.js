@@ -93,3 +93,10 @@ function numericFormatter(template, number = '1234567890'){
 function smallEnough(a, limit){
   return a.every(e => e <= limit)
 }
+
+// Tortoise racing
+// JavaScript:
+function race(v1, v2, g) {
+  let s = (g * 3600) /( v2 - v1);
+  return v1 > v2 ?null:[Math.trunc(s / 3600), Math.trunc((s % 3600) / 60), Math.trunc(s % 60)]
+}
