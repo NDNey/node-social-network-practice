@@ -100,3 +100,10 @@ function race(v1, v2, g) {
   let s = (g * 3600) /( v2 - v1);
   return v1 > v2 ?null:[Math.trunc(s / 3600), Math.trunc((s % 3600) / 60), Math.trunc(s % 60)]
 }
+// Coding 3min : Jumping Dutch act
+// JavaScript:
+
+function sc(floor){
+  if(floor <= 1){return ""}
+  return floor > 6 ? `${"Aa~ ".repeat(floor-1)}Pa!`:`${"Aa~ ".repeat(floor-1)}Pa! Aa!`
+}
