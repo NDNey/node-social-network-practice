@@ -70,3 +70,13 @@ function sequenceSum(begin, end, step){
    }
   return answer
 }
+// Sums of Parts
+// JavaScript:
+function partsSums(ls) {
+  let answer = [0];
+  for (let i = ls.length - 1; i >= 0; i--){
+    answer.push(ls[i] + answer[ (ls.length - 1) - i]);
+  }
+  return answer.reverse();
+
+}
