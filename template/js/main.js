@@ -87,3 +87,9 @@ function numericFormatter(template, number = '1234567890'){
   let counter = 0
   return template.replace(/[a-z]/gi, () => number[counter++ % number.length])
 }
+
+// Small enough? - Beginner
+// JavaScript:
+function smallEnough(a, limit){
+  return a.every(e => e <= limit)
+}
