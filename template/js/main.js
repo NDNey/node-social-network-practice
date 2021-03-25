@@ -141,3 +141,92 @@ function minMax(arr){
 }
 
 
+// [name:Who likes it?]You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
+
+// Implement a function likes :: [String] -> String, which must take in input array, containing the names of people who like an item. It must return the display text as shown in the examples:
+
+// likes [] -- must be "no one likes this"
+// likes ["Peter"] -- must be "Peter likes this"
+// likes ["Jacob", "Alex"] -- must be "Jacob and Alex like this"
+// likes ["Max", "John", "Mark"] -- must be "Max, John and Mark like this"
+// likes ["Alex", "Jacob", "Mark", "Max"] -- must be "Alex, Jacob and 2 others like this"
+// For 4 or more names, the number in and 2 others simply increases.
+function likes(names) {
+    if(names.length === 0)
+      return 'no one likes this';
+    else if(names.length === 1)
+      return `${names[0]} likes this`;
+    else if(names.length === 2)
+      return `${names[0]} and ${names[1]} like this`;
+    else if(names.length === 3)
+      return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+    else
+      return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+  }
+
+//[name: String array duplicates] In this Kata, you will be given an array of strings and your task is to remove all consecutive duplicate letters from each string in the array.
+// For example:
+// dup(["abracadabra","allottee","assessee"]) = ["abracadabra","alote","asese"].
+// dup(["kelless","keenness"]) = ["keles","kenes"].
+// Strings will be lowercase only, no spaces. See test cases for more examples.
+// Good luck!
+function dup(s) {
+  let newElement = ''
+  for(let i = 0; i <= s.length; i++){
+    for(let j = 0; j < s[i].length; j++){
+      let element = s[i]
+      if(element[j] !== element[j-1]){
+        newElement = newElement + element[j]
+       }
+    }
+    s[i] = newElement
+    if(i ===  s.length - 1){
+      return s
+    }
+    newElement = ''
+  }
+};
+
+// [name:Replace With Alphabet Position]
+// In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+// If anything in the text isn't a letter, ignore it and don't return it.
+// "a" = 1, "b" = 2, etc.
+// Example
+// alphabetPosition("The sunset sets at twelve o' clock.")
+// Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" (as a string)
+let alphabetPosition = (text) => text.toUpperCase().replace(/[^A-Z]/g, '').split('').map(ch => ch.charCodeAt(0) - 64).join(' ');
+
+
+// [name:Unique In Order]
+// Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
+// For example:
+// uniqueInOrder('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
+// uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
+// uniqueInOrder([1,2,2,3,3])       == [1,2,3]
+return [...iterable].filter((a, i) => a !== iterable[i-1])
+
+//[name:Detect Pangram]
+// A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant).
+// Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.
+
+function isPangram(string){
+  let answer = new Set(string.toLowerCase().replace(/[^a-z]/g, "") ).size === 26
+  return answer
+}
+
+//[name:Duplicate Encoder]
+// The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
+
+// Examples
+// "din"      =>  "((("
+// "recede"   =>  "()()()"
+// "Success"  =>  ")())())"
+// "(( @"     =>  "))((" 
+// Notes
+
+// Assertion messages may be unclear about what they display in some languages. If you read "...It Should encode XXX", the "XXX" is the expected result, not the input!
+
+function duplicateEncode(word){
+  let answer = word.toLowerCase().split("").map((char,index,array) => array.filter(let => let === char).length > 1 ? ")" : "(" ).join("")
+  return answer
+}
