@@ -18,14 +18,14 @@ This CRUD app with user login and authentication allows you to create, update, a
 ## How To Use:
   - Fork the repo
   - Clone your forked repo.
-  - Create a `.env` file and add the following as `key = value`
-  ```js PORT = 8000 or any port you would like
-        DB_STRING = Your database URI Note : I used MongoDB when testing
-        CLOUD_NAME = Your cloudinary cloud name
-        API_KEY = Your cloudinary api key
-        API_SECRET = Your cloudinary api secret
+  - Create a `.env` file and add the following:
+  ```js 
+  PORT = 8000 'Or any port you would like'
+  DB_STRING = Your database URI 'I used MongoDB when testing'
+  CLOUD_NAME = Your cloudinary cloud name
+  API_KEY = Your cloudinary api key
+  API_SECRET = Your cloudinary api secret
   ```
+  - Run with 'npm run' in your terminal.
 
-## Lesson Learned:
 
-How to build a CRUD app with AUTH and Cloudinary Image storage.
