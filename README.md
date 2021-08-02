@@ -26,6 +26,7 @@ This CRUD app with user login and authentication allows you to create, update, a
   API_KEY = Your cloudinary api key
   API_SECRET = Your cloudinary api secret
   ```
+  - Do 'npm install' in your terminal.
   - Run with 'npm run' in your terminal.
 
 
