@@ -1,7 +1,7 @@
 {
-  "name": "binary-upload-boom",
+  "name": "social-network",
   "version": "1.0.0",
-  "description": "100Devs Social Network",
+  "description": "a Social Network in node JS",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
