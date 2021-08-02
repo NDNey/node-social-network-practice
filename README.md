@@ -19,11 +19,12 @@ This CRUD app with user login and authentication allows you to create, update, a
   - Fork the repo
   - Clone your forked repo.
   - Create a `.env` file and add the following as `key = value`
-  - PORT = 8000 or any port you would like
-  - DB_STRING = Your database URI Note : I used MongoDB when testing
-  - CLOUD_NAME = Your cloudinary cloud name
-  - API_KEY = Your cloudinary api key
-  - API_SECRET = Your cloudinary api secret
+  ```js PORT = 8000 or any port you would like
+        DB_STRING = Your database URI Note : I used MongoDB when testing
+        CLOUD_NAME = Your cloudinary cloud name
+        API_KEY = Your cloudinary api key
+        API_SECRET = Your cloudinary api secret
+  ```
 
 ## Lesson Learned:
 
